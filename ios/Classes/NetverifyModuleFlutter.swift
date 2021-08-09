@@ -164,7 +164,7 @@ class NetverifyModuleFlutter: NSObject, JumioMobileSdkModule {
         }
         
         if let documentSelectionButtonBackgroundColor = customizations["documentSelectionButtonBackgroundColor"] as? String {
-            NetverifyDocumentSelectionButton.jumioAppearance().backgroundColor = UIColor(hexString: documentSelectionButtonBackgroundColor)
+            NetverifyDocumentSelectionButton.jumioAppearance().setBackgroundColor(UIColor(hexString: documentSelectionButtonBackgroundColor), for: .normal)
         }
         
         if let documentSelectionButtonTitleColor = customizations["documentSelectionButtonTitleColor"] as? String {
